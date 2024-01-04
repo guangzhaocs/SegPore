@@ -2,6 +2,6 @@
 
 
 
-<img![SegPore_anim](https://github.com/guangzhaocs/SegPore/assets/85612159/d8b233f3-29dd-45a1-9ee9-9db83ec541ba)width=60% />
+<img src=pics/github_pic.png width=60% />
   
 ![github_pic](https://github.com/guangzhaocs/SegPore/assets/85612159/66efb6eb-44e0-4eab-ba84-871c13806417)
