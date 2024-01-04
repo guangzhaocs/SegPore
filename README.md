@@ -2,6 +2,6 @@
 
 <div align="center">
 <img src=pics/SegPore_anim.gif width=85% />
-<img src=pics/github_pic.png width=90% />
+<img src=pics/github_pic.png width=95% />
 </div>
 
