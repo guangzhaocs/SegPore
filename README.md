@@ -2,4 +2,4 @@
 
 
 
-![SegPore_anim](https://github.com/guangzhaocs/SegPore/assets/85612159/37b193fa-005c-4e97-871a-dec8275b55c7)
+![SegPore_anim](https://github.com/guangzhaocs/SegPore/assets/85612159/d8b233f3-29dd-45a1-9ee9-9db83ec541ba)
