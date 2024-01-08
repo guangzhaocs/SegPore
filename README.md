@@ -7,8 +7,24 @@
 
 ## SegPore Workflow
 
-### Step 1
 
+### Environment setup
+```
+conda env create -f environment.yml
+conda activate segpore_env
+```
+
+### Download SegPore source code and demo data
+```
+git clone 
+```
+
+### Step 1 
+```
+sh basecalling.sh
+```
+
+### Step 2 
 ```
 sh basecalling.sh
 ```
