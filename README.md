@@ -5,3 +5,10 @@
 <img src=pics/github_pic.png width=95% />
 </div>
 
+### SegPore Workflow
+
+#### Step 1
+
+```
+sh basecalling.sh
+```
