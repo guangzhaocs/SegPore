@@ -19,12 +19,17 @@ conda activate segpore_env
 git clone 
 ```
 
-### Step 1 
+### Step 1: Basecalling, mapping and preprocessing
 ```
 sh basecalling.sh
 ```
 
-### Step 2 
+### Step 2: Hierarchical hidden Markov model for signal segmentation
 ```
-sh basecalling.sh
+sh todo.sh
+```
+
+### Step 3: Alignment of signal segments with reference sequence
+```
+sh todo.sh
 ```
