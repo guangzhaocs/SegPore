@@ -1,4 +1,4 @@
-model_kmer,model_mean,model_stdv,model_mean_un,model_stdv_un,pattern,diff
+model_kmer,model_mean,model_stdv,model_mean_mod,model_stdv_mod,pattern,diff
 AAAAA,108.9,2.16,116.85,3,2,7.95
 AAAAC,107.75,2.68,119.91,3,3,12.16
 AAAAG,101.72,2.68,101.72,2.68,0,0
