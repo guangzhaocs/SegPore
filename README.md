@@ -22,12 +22,13 @@ Here we use the WT demo data of [xPore](https://xpore.readthedocs.io/en/latest/i
 cd SegPore
 wget https://zenodo.org/record/5162402/files/demo.tar.gz
 tar -xvf demo.tar.gz
+sh scripts/0_data_proc.sh
 ```
 
 
 ### Step 1: Basecalling, mapping and preprocessing
 ```
-sh basecalling.sh
+sh scripts/1_0_basecalling.sh
 ```
 
 ### Step 2: Hierarchical hidden Markov model for signal segmentation
