@@ -150,4 +150,3 @@ dependencies:
       - threadpoolctl==3.1.0
       - tqdm==4.63.0
       - typing-extensions==4.2.0
-prefix: /scratch/work/chengg1/myconda/conda_envs/nanopolish_env
