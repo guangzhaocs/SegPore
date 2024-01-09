@@ -7,16 +7,19 @@
 
 ## SegPore Workflow
 
-
 ### Environment setup
 ```
-git clone git@github.com:guangzhaocs/SegPore.git
+git clone https://github.com/guangzhaocs/SegPore.git
+cd SegPore
 conda env create -f environment.yml
 conda activate segpore_env
 ```
 
 ### Download demo data
+
+Here we use the WT demo data of [xPore](https://xpore.readthedocs.io/en/latest/index.html).
 ```
+cd SegPore
 wget https://zenodo.org/record/5162402/files/demo.tar.gz
 tar -xvf demo.tar.gz
 ```
