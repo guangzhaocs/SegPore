@@ -16,7 +16,8 @@ conda activate segpore_env
 
 ### Download demo data
 ```
-git clone 
+wget https://zenodo.org/record/5162402/files/demo.tar.gz
+tar -xvf demo.tar.gz
 ```
 
 ### Step 1: Basecalling, mapping and preprocessing
