@@ -24,6 +24,15 @@ wget https://zenodo.org/record/5162402/files/demo.tar.gz
 tar -xvf demo.tar.gz
 ```
 
+After running `1_data_pre.sh`, your folder will like this: 
+```
+SegPore
+  | -- environment.yml
+  | -- Segpore
+          |  -- code
+          | -- demo
+```
+
 ### Step 1: Basecalling, mapping and preprocessing
 ```
 sh basecalling.sh
