@@ -29,6 +29,7 @@ After running `1_data_pre.sh`, your folder will like this:
 SegPore
   | -- environment.yml
   | -- Segpore
+          | -- scripts
           | -- code
           | -- demo
 ```
