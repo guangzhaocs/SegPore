@@ -28,7 +28,8 @@ sh scripts/0_data_proc.sh
 
 ### Step 1: Basecalling, mapping and preprocessing
 ```
-sh scripts/1_0_basecalling.sh
+sh scripts/1_basecalling.sh
+sh scripts/1_nanopolish.sh
 ```
 
 ### Step 2: Hierarchical hidden Markov model for signal segmentation
