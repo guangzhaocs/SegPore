@@ -1,6 +1,6 @@
 #!/bin/bash -l
 
-cd ../demo
+cd demo
 rm Hek293T_config.yml
 
 echo "creat folders ..."
