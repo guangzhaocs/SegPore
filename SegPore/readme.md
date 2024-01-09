@@ -18,3 +18,9 @@ SegPore
                  | -- 4_hhmm
                  | -- 5_align
 ```
+
+
+```
+165 HEK293T_WT_rep1_FAK27249_demo_0_polya.tsv
+104 HEK293T_WT_rep1_FAK27249_demo_0_polya_pass.tsv
+```
