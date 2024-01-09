@@ -11,9 +11,10 @@
 ```
 git clone https://github.com/guangzhaocs/SegPore.git
 cd SegPore
-conda env create -f environment.yml
+conda env create -f environment.yml -p /home/user/anaconda3/envs/env_name
 conda activate segpore_env
 ```
+Here `/home/user/anaconda3/envs/env_name` is your prefix path if you want to specify a different install path than the default for your system. 
 
 ### Download demo data
 
