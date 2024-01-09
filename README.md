@@ -14,7 +14,7 @@ conda env create -f environment.yml
 conda activate segpore_env
 ```
 
-### Download SegPore source code and demo data
+### Download demo data
 ```
 git clone 
 ```
