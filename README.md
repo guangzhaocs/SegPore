@@ -10,6 +10,7 @@
 
 ### Environment setup
 ```
+git clone git@github.com:guangzhaocs/SegPore.git
 conda env create -f environment.yml
 conda activate segpore_env
 ```
