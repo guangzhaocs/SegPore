@@ -7,6 +7,8 @@
 
 ## SegPore Workflow
 
+More details on [SegPore tutorials](SegPore/).
+
 ### Environment setup
 ```
 git clone https://github.com/guangzhaocs/SegPore.git
