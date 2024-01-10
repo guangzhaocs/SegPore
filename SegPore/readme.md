@@ -25,7 +25,6 @@ tar -xvf demo.tar.gz
 cd scripts
 sh 0_data_proc.sh
 ```
-
 After running `0_data_proc.sh`, your folders will like this: 
 ```
 SegPore
@@ -42,9 +41,27 @@ SegPore
                  | -- 4_hhmm
                  | -- 5_align
 ```
-
-
+### Step 1: Basecalling, mapping and preprocessing
+```
+sh 1_basecalling.sh
+sh 1_nanopolish.sh
+```
 ```
 165 HEK293T_WT_rep1_FAK27249_demo_0_polya.tsv
 104 HEK293T_WT_rep1_FAK27249_demo_0_polya_pass.tsv
 ```
+### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
+```
+sh todo.sh
+```
+
+### Step 3: Alignment of signal segments with reference sequence
+```
+sh todo.sh
+```
+
+### Step 4: GMM to update 5mer parameter table
+```
+sh todo.sh
+```
+
