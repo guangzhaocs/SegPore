@@ -17,7 +17,7 @@ Finally, activate the environment:
 conda activate segpore_env
 ```
 
-Download demo data from xPore, 
+Download demo data from [xPore](https://xpore.readthedocs.io/en/latest/index.html). Our SegPore is the single-mode method, so we only use the WT data in the demo data.
 ```
 cd SegPore
 wget https://zenodo.org/record/5162402/files/demo.tar.gz
