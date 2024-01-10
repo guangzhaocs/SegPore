@@ -45,7 +45,7 @@ sh todo.sh
 sh todo.sh
 ```
 
-### Step 4: GMM to estimate modification
+### Step 4: GMM to update 5mer parameter table
 ```
 sh todo.sh
 ```
