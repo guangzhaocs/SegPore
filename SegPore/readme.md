@@ -59,6 +59,12 @@ In nanopolish eventalign and summary results, one read may be processed multiple
 6cd0cd47-db93-4e73-99cc-e91c68f45268 [91, 157]
 a7aa6921-712f-481e-8496-4a963618b786 [134, 163]
 ```
+The nanopolish eventalign also maps one or multiple events to one kmer, so here we combine the eventalign results:
+```
+contig	position	reference_kmer	read_index	strand	event_index	event_level_mean	event_stdv	event_length	model_kmer	model_mean	model_stdv	standardized_level	start_idx	end_idx
+ENST00000273480.3	14	TAGGC	0	t	4	79.04	0.758	0.00299	TAGGC	93.67	7.84	-1.67	53396	53405
+ENST00000273480.3	14	TAGGC	0	t	5	95.28	3.837	0.00730	TAGGC	93.67	7.84	0.18	53374	53396
+```
 
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
