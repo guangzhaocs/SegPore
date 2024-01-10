@@ -1,5 +1,30 @@
 # SegPore Tutorials
+```
+git clone https://github.com/guangzhaocs/SegPore.git
+cd SegPore
+```
+## Environment setup
 
+```
+conda env create -f environment.yml
+```
+The environment will get installed in their default conda environment path. If you want to specify a different install path than the default for your system, add `-p`:
+```
+conda env create -f environment.yml -p /home/user/anaconda3/envs/env_name
+```
+Finally, activate the environment:
+```
+conda activate segpore_env
+```
+
+Download demo data from xPore, 
+```
+cd SegPore
+wget https://zenodo.org/record/5162402/files/demo.tar.gz
+tar -xvf demo.tar.gz
+cd scripts
+sh 0_data_proc.sh
+```
 
 After running `0_data_proc.sh`, your folders will like this: 
 ```
