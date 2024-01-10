@@ -1,5 +1,4 @@
-# SegPore workflow
-
+# SegPore Tutorials
 
 
 After running `0_data_proc.sh`, your folders will like this: 
