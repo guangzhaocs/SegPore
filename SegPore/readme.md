@@ -65,6 +65,11 @@ contig	position	reference_kmer	read_index	strand	event_index	event_level_mean	ev
 ENST00000273480.3	14	TAGGC	0	t	4	79.04	0.758	0.00299	TAGGC	93.67	7.84	-1.67	53396	53405
 ENST00000273480.3	14	TAGGC	0	t	5	95.28	3.837	0.00730	TAGGC	93.67	7.84	0.18	53374	53396
 ```
+After combining:
+```
+read_idx	contig	pos	kmer	mean	start_idx	end_idx
+0	ENST00000273480.3	16	TAGGC	90.565	53374	53405
+```
 
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
