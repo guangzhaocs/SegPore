@@ -40,6 +40,10 @@ sh 1_nanopolish.sh
 sh todo.sh
 ```
 
+### Reference
+1. Pratanwanich, P.N., Yao, F., Chen, Y. et al. Identification of differential RNA modifications from nanopore direct RNA sequencing with xPore. Nat Biotechnol 39, 1394–1402 (2021). https://doi.org/10.1038/s41587-021-00949-w
+2. Zhong, ZD., Xie, YY., Chen, HX. et al. Systematic comparison of tools used for m6A mapping from nanopore direct RNA sequencing. Nat Commun 14, 1906 (2023). https://doi.org/10.1038/s41467-023-37596-5
+
 ### Step 3: Alignment of signal segments with reference sequence
 ```
 sh todo.sh
