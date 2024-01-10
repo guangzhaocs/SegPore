@@ -46,9 +46,10 @@ SegPore
 sh 1_basecalling.sh
 sh 1_nanopolish.sh
 ```
+Next, SegPore will use the PloyA to standardize the reads, so we only keep the `PASS` reads.
 ```
-165 HEK293T_WT_rep1_FAK27249_demo_0_polya.tsv
-104 HEK293T_WT_rep1_FAK27249_demo_0_polya_pass.tsv
+165 lines  HEK293T_WT_rep1_FAK27249_demo_0_polya.tsv
+104 lines  HEK293T_WT_rep1_FAK27249_demo_0_polya_pass.tsv
 ```
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
 ```
