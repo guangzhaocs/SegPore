@@ -54,6 +54,12 @@ wc -l ../demo/3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya_pass.tsv
 # 104 ../demo/3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya_pass.tsv
 ```
 
+In nanopolish eventalign and summary results, one read may be processed multiple times (one read_name may correspond to multi read_idx).
+```
+6cd0cd47-db93-4e73-99cc-e91c68f45268 [91, 157]
+a7aa6921-712f-481e-8496-4a963618b786 [134, 163]
+```
+
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
 ```
