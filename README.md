@@ -35,7 +35,7 @@ sh 1_basecalling.sh
 sh 1_nanopolish.sh
 ```
 
-### Step 2: Hierarchical hidden Markov model for signal segmentation
+### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
 ```
 sh todo.sh
 ```
