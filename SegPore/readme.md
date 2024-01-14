@@ -70,6 +70,9 @@ After combining:
 read_idx	contig	pos	kmer	mean	start_idx	end_idx
 0	ENST00000273480.3	16	TAGGC	90.565	53374	53405
 ```
+53405 - 53396 = 9
+53396 - 53374 = 22
+79.04 * 9 / (9+ 22) + 95.28* 22 / (9+ 22) = 90.565
 
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
