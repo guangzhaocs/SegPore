@@ -75,6 +75,7 @@ In nanopolish eventalign and summary results, one read may be processed multiple
 6cd0cd47-db93-4e73-99cc-e91c68f45268 [91, 157]
 a7aa6921-712f-481e-8496-4a963618b786 [134, 163]
 ```
+So when standardizing the fast5 file, one read_name only choose one read_idx.
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
 ```
