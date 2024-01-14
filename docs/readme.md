@@ -77,6 +77,10 @@ a7aa6921-712f-481e-8496-4a963618b786 [134, 163]
 ```
 So when standardizing the fast5 file, one read_name only choose one read_idx.
 
+<div align="center">
+<img src=../pics/SegPore_anim.gif width=80% />
+</div>
+
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
 ```
 sh todo.sh
