@@ -39,6 +39,10 @@ SegPore
                  | -- 2_fastq
                  | -- 3_nanopolish
                  | -- 4_hhmm
+                         | -- hhmm_init
+                         | -- hhmm_input
+                         | -- hhmm_output
+                         | -- hhmm_final
                  | -- 5_align
 ```
 ### Step 1: Basecalling, mapping and preprocessing
