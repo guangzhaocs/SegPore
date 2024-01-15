@@ -121,7 +121,7 @@ cd ../code/Resquiggle
 g++ -O3 -Werror -Wall --pedantic -std=c++17 -march=native -fopenmp -o resquiggle_2D main_2D.cpp
 cd ../../scripts
 ```
-Run full alignment:
+Run alignment algorithm:
 ```
 sh 3_alignment.sh
 ```
