@@ -38,8 +38,22 @@ sh 1_nanopolish.sh
 ```
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
+Firstly, prepare the input of HHMM.
 ```
-sh todo.sh
+sh 2_hhmm_prepare.sh
+```
+If the `code/HierHmmCuda/hmm_one_read` can not run on your cluster, you can compile it as follows:
+```
+module load gcc
+module load cuda
+cd ../code/HierHmmCuda
+srun --mem=1G --time=00:10:00 --gres=gpu nvcc -o hmm_one_read hmm_one_read.cu
+cd ../../scripts
+```
+Next, run HHMM on CUDA:
+```
+sh 2_hhmm_GPU.sh
+sh 2_hhmm_post_proc.sh
 ```
 
 ### Step 3: Alignment of signal segments with reference sequence
