@@ -142,6 +142,10 @@ After combining:
 0	ENST00000273480.3	16	TAGGC	810	88.749	53339	53423	50
 0	ENST00000273480.3	17	AGGCA	164	110.284	53135	53332	108
 ```
+The density of all `GGACT` is as follows:
+<div align="center">
+<img src=../pics/SegPore_GGACT.jpg width=80% />
+</div>
 
 ### Step 4: GMM to update 5mer parameter table
 ```
