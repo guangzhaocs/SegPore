@@ -156,7 +156,9 @@ if __name__ == '__main__':
     parser.add_argument('--eventalign', type=str, default="segpore_eventalign_2D_combined_GGACT.txt")
     args = parser.parse_args()
 
-    segpore_df = pd.read_csv(args.eventalign, header=None, sep='\t')
+    eventalign_file = os.path.join(args.root_dir, "5_align", args.sample, args.eventalign)
+
+    segpore_df = pd.read_csv(eventalign_file, header=None, sep='\t')
     segpore_df.columns = ['read_index', 'contig', 'pos', 'kmer', 'kmer_idx', 'mean', 'start_idx', 'end_idx', 'len']
 
     mean_1, sigma_1, w_1, mean_2, sigma_2, w_2, bic = fit_GMM(list(segpore_df['mean']), 123.83)
