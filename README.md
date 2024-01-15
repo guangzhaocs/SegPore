@@ -62,9 +62,11 @@ sh 3_alignment.sh
 ```
 
 ### Step 4: GMM to update 5mer parameter table
+Fix the mean of the first component of GMM.
 ```
 sh 4_gmm.sh
 ```
+Use the results of GMM to update the 5mer parameter table and iteratively run Step 3 and Step 4.
 
 ### Reference
 1. Pratanwanich, P.N., Yao, F., Chen, Y. et al. Identification of differential RNA modifications from nanopore direct RNA sequencing with xPore. Nat Biotechnol 39, 1394–1402 (2021). https://doi.org/10.1038/s41587-021-00949-w
