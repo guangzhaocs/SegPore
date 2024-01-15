@@ -144,11 +144,12 @@ After combining:
 ```
 The density of all `GGACT` is as follows:
 <div align="center">
-<img src=../pics/SegPore_GGACT.jpg width=80% />
+<img src=../pics/SegPore_GGACT.jpg width=40% />
 </div>
 
 ### Step 4: GMM to update 5mer parameter table
+Fix the mean of the first component of GMM.
 ```
-sh todo.sh
+sh 4_gmm.sh
 ```
 
