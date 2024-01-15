@@ -87,7 +87,18 @@ So when standardizing the fast5 file, one read_name only choose one read_idx. Th
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
 ```
-sh todo.sh
+sh 2_hhmm_prepare.sh
+```
+
+```
+module load gcc
+module load cuda
+cd ../code/HierHmmCuda
+srun --mem=1G --time=00:10:00 --gres=gpu nvcc -o hmm_one_read hmm_one_read.cu
+```
+
+```
+sh 2_hhmm_GPU.sh
 ```
 
 ### Step 3: Alignment of signal segments with reference sequence
