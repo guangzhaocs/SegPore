@@ -152,4 +152,5 @@ Fix the mean of the first component of GMM.
 ```
 sh 4_gmm.sh
 ```
+Use the results of GMM to update the 5mer parameter table and iteratively run Step 3 and Step 4.
 
