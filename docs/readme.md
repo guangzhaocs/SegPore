@@ -1,4 +1,9 @@
 # SegPore Tutorials
+
+<div align="center">
+<img src=../pics/segpore_workflow.jpg width=80% />
+</div>
+
 ```
 git clone https://github.com/guangzhaocs/SegPore.git
 cd SegPore
