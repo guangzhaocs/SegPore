@@ -114,8 +114,16 @@ sh 2_hhmm_post_proc.sh
 ```
 
 ### Step 3: Alignment of signal segments with reference sequence
+If the `code/Resquiggle/resquiggle_2D` can not run on your cluster, you can compile it as follows:
 ```
-sh todo.sh
+module load gcc
+cd ../code/Resquiggle
+g++ -O3 -Werror -Wall --pedantic -std=c++17 -march=native -fopenmp -o resquiggle_2D main_2D.cpp
+cd ../../scripts
+```
+Run full alignment:
+```
+sh 3_alignment.sh
 ```
 
 ### Step 4: GMM to update 5mer parameter table
