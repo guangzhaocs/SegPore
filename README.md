@@ -58,7 +58,7 @@ sh 2_hhmm_post_proc.sh
 
 ### Step 3: Alignment of signal segments with reference sequence
 ```
-sh todo.sh
+sh 3_alignment.sh
 ```
 
 ### Step 4: GMM to update 5mer parameter table
