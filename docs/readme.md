@@ -148,7 +148,7 @@ The density of all `GGACT` is as follows:
 </div>
 
 ### Step 4: GMM to update 5mer parameter table
-Fix the mean of the first component of GMM.
+Fix the mean of the first component of GMM. For GGACT, the fixed mean is 123.83.
 ```
 sh 4_gmm.sh
 ```
