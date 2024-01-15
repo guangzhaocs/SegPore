@@ -106,7 +106,9 @@ The output illustration of HHMM:
 <div align="center">
 <img src=../pics/hhmm_output.jpg width=80% />
 </div>
+
 Finally, generate the final output:
+
 ```
 sh 2_hhmm_post_proc.sh
 ```
