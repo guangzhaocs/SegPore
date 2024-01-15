@@ -63,7 +63,7 @@ sh 3_alignment.sh
 
 ### Step 4: GMM to update 5mer parameter table
 ```
-sh todo.sh
+sh 4_gmm.sh
 ```
 
 ### Reference
