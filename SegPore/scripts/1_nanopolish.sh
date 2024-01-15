@@ -29,3 +29,11 @@ echo " *** polyA is over."
 
 grep -E 'PASS|readname' 3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya.tsv > 3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya_pass.tsv
 echo " *** filter polyA is over (grep PASS)."
+
+
+cd ..
+python code/0_1_add_strand_and_order.py
+python code/0_2_combine_nanopolish_eventalign.py
+cp demo/1_fast5/HEK293T_WT_rep1_FAK27249_demo_0.fast5 demo/1_fast5/HEK293T_WT_rep1_FAK27249_demo_0.standardized.fast5
+python code/0_3_standardize_multi_fast5.py 
+echo " *** Post-processing of nanopolish is over."

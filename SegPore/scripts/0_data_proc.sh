@@ -9,10 +9,16 @@ mkdir 1_fast5
 mkdir 2_fastq
 mkdir 3_nanopolish
 mkdir 4_hhmm
+mkdir 4_hhmm/hhmm_init
+mkdir 4_hhmm/hhmm_input
+mkdir 4_hhmm/hhmm_output
+mkdir 4_hhmm/hhmm_final
 mkdir 5_align
 
 mv demo.fa 0_reference/
 mv demo.gtf 0_reference/
+mv ../model_idx_kmer.csv 0_reference/
+mv ../model_kmer_m6A_without_header.csv 0_reference/
 
 echo "combine single fast5 files to multi_fast5 ..."
 single_to_multi_fast5 --input_path data/HEK293T-WT-rep1/fast5/ --save_path 1_fast5/ --filename_base HEK293T_WT_rep1_FAK27249_demo --batch_size 4000 --recursive
