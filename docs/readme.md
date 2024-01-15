@@ -154,3 +154,5 @@ sh 4_gmm.sh
 ```
 Use the results of GMM to update the 5mer parameter table and iteratively run Step 3 and Step 4.
 
+In this demo experiment, the 5mer parameter table is `demo/0_reference/model_kmer_m6A_without_header.csv`. In the first round, the fixed mean is from the kmer_model (https://github.com/nanoporetech/kmer_models) of ONT.   
+
