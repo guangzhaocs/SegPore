@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Time    : 2021/12/28 15:34
-# @Author  : https://github.com/guangzhaocs/SegPore
-# @FileName: add_strand_and_order.py
 import os
 import pandas as pd
 import numpy as np
