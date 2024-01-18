@@ -82,7 +82,7 @@ a7aa6921-712f-481e-8496-4a963618b786 [134, 163]
 So when standardizing the fast5 file, one read_name only choose one read_idx. The example of a standardized multi-fast5 file is as follows:
 
 <div align="center">
-<img src=../pics/standardized_multi_fast5_example.jpg width=60% />
+<img src=media/standardized_multi_fast5_example.jpg width=60% />
 </div>
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
@@ -104,7 +104,7 @@ sh 2_hhmm_GPU.sh
 ```
 The output illustration of HHMM:
 <div align="center">
-<img src=../pics/hhmm_output.jpg width=80% />
+<img src=media/hhmm_output.jpg width=80% />
 </div>
 
 Finally, generate the final output:
@@ -144,7 +144,7 @@ After combining:
 ```
 The density of all `GGACT` is as follows:
 <div align="center">
-<img src=../pics/SegPore_GGACT.jpg width=40% />
+<img src=media/SegPore_GGACT.jpg width=40% />
 </div>
 
 ### Step 4: GMM to update 5mer parameter table
@@ -157,6 +157,6 @@ Use the results of GMM to update the 5mer parameter table and iteratively run St
 In this demo experiment, the 5mer parameter table is `demo/0_reference/model_kmer_m6A_without_header.csv`. In the first round, the fixed mean is from the kmer_model (https://github.com/nanoporetech/kmer_models) of ONT. Each round, the 5mer parameter table will be updated. And after training, the 5mer parameter table is fixed and used for testing.
 
 <div align="center">
-<img src=../pics/segpore_workflow.jpg width=80% />
+<img src=media/segpore_workflow.jpg width=80% />
 </div>
 
