@@ -1,17 +1,13 @@
 Welcome to SegPore tutorials!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+SegPore is a software to segment the raw nanopore direct RNA sequence and estimates various RNA modifications and secondary folding structures.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
 
-.. note::
 
-   This project is under active development.
+.. Publication::
+
+   Cheng, Guangzhao, Aki Vehtari, and Lu Cheng. "Raw signal segmentation for estimating RNA modifications and structures from Nanopore direct RNA sequencing data." bioRxiv (2024): 2024-01.
 
 Contents
 --------
