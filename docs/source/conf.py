@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'SegPore'
-copyright = '2024, Guangzhao Cheng'
+copyright = '2024, Guangzhao Cheng, Aki Vehtari, and Lu Cheng'
 author = 'Guangzhao Cheng'
 
 release = '0.1'
