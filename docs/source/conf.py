@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'SegPore'
+copyright = '2021, Guangzhao Cheng'
+author = 'Guangzhao Cheng'
 
 release = '0.1'
 version = '0.1.0'
