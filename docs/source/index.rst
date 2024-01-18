@@ -13,8 +13,6 @@ Publication
 
 Cheng G, Vehtari A, Cheng L. Raw signal segmentation for estimating RNA modifications and structures from Nanopore direct RNA sequencing data[J]. bioRxiv, 2024: 2024.01. 11.575207.
 
-test 2
-
 
 Contents
 --------
