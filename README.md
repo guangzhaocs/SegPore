@@ -3,8 +3,8 @@
 ### Preprint: https://www.biorxiv.org/content/10.1101/2024.01.11.575207v1
 
 <div align="center">
-<img src=pics/SegPore_anim.gif width=80% />
-<img src=pics/github_pic.png width=95% />
+<img src=docs/media/SegPore_anim.gif width=80% />
+<img src=docs/media/github_pic.png width=95% />
 </div>
 
 ## SegPore Workflow
