@@ -5,7 +5,7 @@ SegPore is a software to segment the raw nanopore direct RNA sequence and estima
 
 <div align="center">
 <img src=../../pics/SegPore_anim.gif width=80% />
-<img src=pics/github_pic.png width=95% />
+<img src=../../pics/github_pic.png width=95% />
 </div>
 
 .. Publication::
