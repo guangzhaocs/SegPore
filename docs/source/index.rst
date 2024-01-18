@@ -11,9 +11,7 @@ SegPore is a software to segment the raw nanopore direct RNA sequence and estima
 Publication
 --------
 
-Cheng, Guangzhao, Aki Vehtari, and Lu Cheng. "Raw signal segmentation for estimating RNA modifications and structures from Nanopore direct RNA sequencing data." bioRxiv (2024): 2024-01.
-
-test1
+Cheng G, Vehtari A, Cheng L. Raw signal segmentation for estimating RNA modifications and structures from Nanopore direct RNA sequencing data[J]. bioRxiv, 2024: 2024.01. 11.575207.
 
 Contents
 --------
