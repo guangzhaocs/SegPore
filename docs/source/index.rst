@@ -3,7 +3,10 @@ Welcome to SegPore tutorials!
 
 SegPore is a software to segment the raw nanopore direct RNA sequence and estimates various RNA modifications and secondary folding structures.
 
-
+.. figure: ../../pics/SegPore_anim.gif 
+   :alt: 野火logo
+   :align: center
+   :caption: 野火logo
 
 Publication
 --------
