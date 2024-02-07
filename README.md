@@ -1,4 +1,4 @@
-# SegPore: raw signal segmentation for estimating RNA modifications and structures from Nanopore direct RNA sequencing data
+# SegPore: Raw Signal Segmentation for Estimating RNA Modifications and Structures from Nanopore Direct RNA Sequencing Data
 
 ### Preprint: https://www.biorxiv.org/content/10.1101/2024.01.11.575207v1
 
