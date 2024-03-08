@@ -1,7 +1,5 @@
 ## SegPore: Raw Signal Segmentation for Estimating RNA Modifications and Structures from Nanopore Direct RNA Sequencing Data
 
-### Preprint: https://www.biorxiv.org/content/10.1101/2024.01.11.575207v2
-
 <div align="center">
 <img src=docs/media/SegPore_anim.gif width=80% />
 <img src=docs/media/github_pic.png width=95% />
@@ -67,6 +65,13 @@ Fix the mean of the first component of GMM.
 sh 4_gmm.sh
 ```
 Use the results of GMM to update the 5mer parameter table and iteratively run Step 3 and Step 4.
+
+
+## Citation
+
+```
+Cheng G, Vehtari A, Cheng L. Raw signal segmentation for estimating RNA modifications and structures from Nanopore direct RNA sequencing data[J]. bioRxiv, 2024: 2024.01. 11.575207.
+```
 
 ## Reference
 1. Pratanwanich, P.N., Yao, F., Chen, Y. et al. Identification of differential RNA modifications from nanopore direct RNA sequencing with xPore. Nat Biotechnol 39, 1394–1402 (2021). https://doi.org/10.1038/s41587-021-00949-w
