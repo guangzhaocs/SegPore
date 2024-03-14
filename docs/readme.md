@@ -57,14 +57,16 @@ SegPore
 sh 1_basecalling.sh
 sh 1_nanopolish.sh
 ```
-SegPore will use the PloyA to standardize the reads, so in the script `1_nanopolish.sh`, there only keep the `PASS` reads. 
+Below are some explanations about what happened in the script `1_nanopolish.sh`. If you are interested in this, you can read the following. Otherwise, ship to the next step directly!
+
+SegPore uses the `PloyA` tail to standardize the reads, so only the `PASS` reads are kept. 
 ```
 wc -l ../demo/3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya.tsv
 # 165 ../demo/3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya.tsv
 wc -l ../demo/3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya_pass.tsv
 # 104 ../demo/3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya_pass.tsv
 ```
-The nanopolish eventalign also maps one or multiple events to one kmer, so here we combine the eventalign results:
+The nanopolish eventalign also maps one or multiple events to one kmer, so here we also combine the eventalign results:
 ```
 contig	position	reference_kmer	read_index	strand	event_index	event_level_mean	event_stdv	event_length	model_kmer	model_mean	model_stdv	standardized_level	start_idx	end_idx
 ENST00000273480.3	14	TAGGC	0	t	4	79.04	0.758	0.00299	TAGGC	93.67	7.84	-1.67	53396	53405
