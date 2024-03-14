@@ -49,6 +49,9 @@ SegPore
                          | -- hhmm_final
                  | -- 5_align
 ```
+
+## SegPore Workflow
+
 ### Step 1: Basecalling, mapping and preprocessing
 ```
 sh 1_basecalling.sh
