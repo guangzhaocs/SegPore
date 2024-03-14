@@ -16,6 +16,7 @@ cd SegPore
 conda env create -f environment.yml
 conda activate segpore_env
 pip3 install git+https://github.com/EGA-archive/ont2cram
+# install Guppy
 ```
 
 ### Download demo data
