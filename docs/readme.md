@@ -19,9 +19,9 @@ For Guppy installation, some references:
 - https://help.nanoporetech.com/en/articles/6628042-how-do-i-install-stand-alone-guppy
 - https://ontpipeline2.readthedocs.io/en/latest/GetStarted.html
 
+## Download Demo Data
 
-
-Download demo data from [xPore](https://xpore.readthedocs.io/en/latest/index.html). Our SegPore is the single-mode method, so we only use the WT data in the demo data.
+We use the demo data from [xPore](https://xpore.readthedocs.io/en/latest/index.html). Our SegPore is the single-mode method, so we only use the WT data in the demo data.
 ```
 cd SegPore
 wget https://zenodo.org/record/5162402/files/demo.tar.gz
