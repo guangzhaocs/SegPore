@@ -86,16 +86,15 @@ So when standardizing the fast5 file, one read_name only choose one read_idx. Th
 </div>
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
-#### 2.1 Firstly, prepare the input of HHMM.
+#### Step 2.1: Firstly, prepare the input of HHMM.
 ```
 sh 2_hhmm_prepare.sh
 ```
-#### 2.2 Next, run HHMM on CUDA:
+#### Step 2.2: Next, run HHMM on CUDA:
 ```
 sh 2_hhmm_GPU.sh
 ```
-
-If the above script has errors or the `code/HierHmmCuda/hmm_one_read` can not run on your cluster, you can re-compile it as follows:
+If the above script has no errors, you can run next Step 2.3 direactly. If the above script has errors or the `code/HierHmmCuda/hmm_one_read` can not run on your cluster, you can re-compile it as follows:
 ```
 module load gcc
 module load cuda
@@ -108,7 +107,7 @@ The output illustration of HHMM:
 <img src=media/hhmm_output.jpg width=80% />
 </div>
 
-#### 2.3 Finally, generate the final output:
+#### Step 2.3: Finally, generate the final output:
 ```
 sh 2_hhmm_post_proc.sh
 ```
@@ -118,7 +117,7 @@ Run alignment algorithm:
 ```
 sh 3_alignment.sh
 ```
-If the above script has errors or the `code/Resquiggle/resquiggle_2D` can not run on your cluster, you can re-compile it as follows:
+If the above script has no errors, you can run next step direactly. If the above script has errors or the `code/Resquiggle/resquiggle_2D` can not run on your cluster, you can re-compile it as follows:
 ```
 module load gcc
 cd ../code/Resquiggle
