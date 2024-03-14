@@ -96,11 +96,11 @@ So when standardizing the fast5 file, one read_name only choose one read_idx. Th
 
 ### Step 2: Hierarchical hidden Markov model (HHMM) for signal segmentation
 #### Step 2.1: Firstly, prepare the input of HHMM.
-```
-sh 2_hhmm_prepare.sh
-```
 ```diff
 ! ATTENTION: This step may take a lot of time, and we will update the CUDA version soon.
+```
+```
+sh 2_hhmm_prepare.sh
 ```
 #### Step 2.2: Next, run HHMM on CUDA:
 ```
