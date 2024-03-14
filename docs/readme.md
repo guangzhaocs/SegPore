@@ -8,10 +8,7 @@ cd SegPore
 ```
 conda env create -f environment.yml
 ```
-The environment will get installed in their default conda environment path. If you want to specify a different install path than the default for your system, add `-p`:
-```
-conda env create -f environment.yml -p /home/user/anaconda3/envs/env_name
-```
+The environment will get installed in their default conda environment path. If you want to specify a different install path than the default for your system, add `-p`: `conda env create -f environment.yml -p /home/user/anaconda3/envs/env_name`
 Finally, activate the environment:
 ```
 conda activate segpore_env
