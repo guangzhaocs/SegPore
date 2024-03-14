@@ -101,7 +101,7 @@ sh 2_hhmm_prepare.sh
 ```
 
 ```diff
-! Attention: This step may take a lot of time, but we will update the CUDA version soon !!!
+! ATTENTION: This step may take a lot of time, and we will update the CUDA version soon !!!
 ```
 
 #### Step 2.2: Next, run HHMM on CUDA:
