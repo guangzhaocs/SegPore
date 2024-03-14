@@ -10,11 +10,16 @@ conda env create -f environment.yml
 ```
 The environment will get installed in their default conda environment path. If you want to specify a different install path than the default for your system, add `-p`: `conda env create -f environment.yml -p /home/user/anaconda3/envs/env_name`
 
-Finally, activate the environment and install `ont2cram`:
+Finally, activate the environment, install `ont2cram` and `Guppy`:
 ```
 conda activate segpore_env
 pip3 install git+https://github.com/EGA-archive/ont2cram
 ```
+For Guppy installation, some references: 
+- https://help.nanoporetech.com/en/articles/6628042-how-do-i-install-stand-alone-guppy
+- https://ontpipeline2.readthedocs.io/en/latest/GetStarted.html
+
+
 
 Download demo data from [xPore](https://xpore.readthedocs.io/en/latest/index.html). Our SegPore is the single-mode method, so we only use the WT data in the demo data.
 ```
