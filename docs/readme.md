@@ -99,6 +99,11 @@ So when standardizing the fast5 file, one read_name only choose one read_idx. Th
 ```
 sh 2_hhmm_prepare.sh
 ```
+
+```diff
+! Attention: This step may take a lot of time, but we will update the CUDA version soon !!!
+```
+
 #### Step 2.2: Next, run HHMM on CUDA:
 ```
 sh 2_hhmm_GPU.sh
