@@ -111,7 +111,7 @@ If the above script has no errors, you can run next Step 2.3 direactly. If the a
 module load gcc
 module load cuda
 cd ../code/HierHmmCuda
-srun --mem=1G --time=00:10:00 --gres=gpu nvcc -o hmm_one_read hmm_one_read.cu
+nvcc -o hmm_one_read hmm_one_read.cu
 cd ../../scripts
 ```
 The output illustration of HHMM:
