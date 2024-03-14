@@ -57,7 +57,7 @@ SegPore
 sh 1_basecalling.sh
 sh 1_nanopolish.sh
 ```
-Next, SegPore will use the PloyA to standardize the reads, so we only keep the `PASS` reads. 
+SegPore will use the PloyA to standardize the reads, so in the script `1_nanopolish.sh`, there only keep the `PASS` reads. 
 ```
 wc -l ../demo/3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya.tsv
 # 165 ../demo/3_nanopolish/HEK293T_WT_rep1_FAK27249_demo_0_polya.tsv
