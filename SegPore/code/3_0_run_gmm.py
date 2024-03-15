@@ -162,6 +162,9 @@ if __name__ == '__main__':
     segpore_df.columns = ['read_index', 'contig', 'pos', 'kmer', 'kmer_idx', 'mean', 'start_idx', 'end_idx', 'len']
 
     mean_1, sigma_1, w_1, mean_2, sigma_2, w_2, bic = fit_GMM(list(segpore_df['mean']), 123.83)
-    print(mean_1, sigma_1, w_1, mean_2, sigma_2, w_2)
+    # print(mean_1, sigma_1, w_1, mean_2, sigma_2, w_2)
+    print(f" * New GGACT estimated paras : mean_1 = {mean_1}, sigma_1 = {sigma_1}, w_1 = {w_1},"
+          f" mean_2 = {mean_2}, sigma_2 = {sigma_2}, w_2 = {w_2}.")
+    print(" * This is only the simple demo for GGACT.")
 
     # plot_density_site_only_one_sample(segpore_df, mean_1, sigma_1, w_1, mean_2, sigma_2, w_2)
