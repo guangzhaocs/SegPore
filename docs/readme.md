@@ -166,7 +166,13 @@ Fix the mean of the first component of GMM. For GGACT, the fixed mean is 123.83.
 ```
 sh 4_gmm.sh
 ```
-Use the results of GMM to update the 5mer parameter table `(demo/0_reference/model_kmer_m6A_without_header.csv)` manually and iteratively run Step 3 and Step 4.
+You will get the output:
+```
+ * New GGACT estimated paras : mean_1 = 123.83, sigma_1 = 3.27, w_1 = 0.63, mean_2 = 117.81, sigma_2 = 2.64, w_2 = 0.37.
+ * This is only the simple demo for GGACT.
+```
+
+Here we only estimate the kmer `GGACT`. Use the results of GMM to update the 5mer parameter table `(demo/0_reference/model_kmer_m6A_without_header.csv)` manually and iteratively run Step 3 and Step 4.
 
 In this demo experiment, the 5mer parameter table is `demo/0_reference/model_kmer_m6A_without_header.csv`. In the first round, the fixed mean is from the kmer_model (https://github.com/nanoporetech/kmer_models) of ONT. Each round, the 5mer parameter table will be updated. And after training, the 5mer parameter table is fixed and used for testing.
 
