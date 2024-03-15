@@ -4,7 +4,7 @@
 # @Github  : https://github.com/guangzhaocs/SegPore
 import os
 import sys
-
+from scipy.stats import norm
 import pandas as pd
 import numpy as np
 import h5py
@@ -52,73 +52,43 @@ def read_transcript_fa(transcript_fasta_file_name):
     return dict
 
 
-def read_summary(summary_file_name):
+def read_model_kmer(file_name):
     """
-    Read the eventalign summary.txt and return a dict.
-
-    The summary.txt contains the follow attributes:
-    ['read_index', 'read_name', 'fast5_path', 'model_name', 'strand', 'num_events', 'num_steps',
-    'num_skips', 'num_stays', 'total_duration', 'shift', 'scale', 'drift', 'var']
-
-    :param summary_file_name
+    The file is without header.
+    Read model kmer and return a dict.
+    :param file_name:
     :return:
-          eventalign_summary_dict:
-          - key: read_index
-          - value: {'read_index': '0', 'read_name': 'bd76fe67-db4b-4d72-95df-e23f07aea51a', ... ,  'num_stays': '144',
-                    'total_duration': '0.36', 'shift': '-3.697', 'scale': '0.949', 'drift': '0.000', 'var': '1.523'}
-
-     read_index     read_name      fast5_path     model_name      strand  num_events      num_steps       num_skips
-      num_stays       total_duration  shift   scale   drift   var
-
     """
-    header = None
-    column_num = 0
-    eventalign_summary_dict = dict()
-    error_reads_list = list()
-
-    with open(summary_file_name, 'r') as f:
-        for i, line in enumerate(f):
-            line = line.strip().replace('\n', '').replace('\r', '').split('\t')
-            if i == 0:
-                column_num = len(line)
-                header = line[0:]
-            else:
-                if len(line) == column_num:
-                    # assert len(line) == column_num, f'Error in line {i} !'
-                    read = zip(header, line[0:])
-                    eventalign_summary_dict[int(line[0])] = dict(read)
-                else:
-                    print(line)
-                    error_reads_list.append(int(line[0]))
-
-    return eventalign_summary_dict, error_reads_list
+    model_kmer_pd = pd.read_csv(file_name, header=None)
+    model_kmer_pd.columns = ["model_kmer", "model_mean_un", "model_stdv_un", "model_mean_mod", "model_stdv_mod"]
+    model_kmer_pd['model_mean_un'] = model_kmer_pd['model_mean_un'].apply(float)
+    model_kmer_pd['model_stdv_un'] = model_kmer_pd['model_stdv_un'].apply(float)
+    model_kmer_pd['model_mean_mod'] = model_kmer_pd['model_mean_mod'].apply(float)
+    model_kmer_pd['model_stdv_mod'] = model_kmer_pd['model_stdv_mod'].apply(float)
+    model_kmer_pd = model_kmer_pd.to_dict('records')
+    model_kmer_dict = dict()
+    for item in model_kmer_pd:
+        model_kmer_dict[item['model_kmer']] = item
+    return model_kmer_dict
 
 
 def write_to_csv(file_name, row):
     with open(file_name, 'a+', newline="") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, delimiter='\t')
         writer.writerow(row)
 
 
-# def read_and_write_multi_fast5(summary_dict, read_index, contig, event_arr, original_fast5_dir):
-#
-#     read_index = int(read_index)
-#     fast5_file_name = summary_dict[read_index]['fast5_path']
-#     fast5_file_name = fast5_file_name.split('/')[-1]
-#     fast5_file_name = os.path.join(original_fast5_dir, fast5_file_name)
-#     read_name = summary_dict[read_index]['read_name']
-#
-#     with h5py.File(fast5_file_name, 'r+') as fast5_data:
-#        for read_key in fast5_data:
-#            read_name_ = fast5_data[read_key]["Raw"].attrs['read_id'].decode("utf-8")
-#            if read_name_ == read_name:
-#                if "Analyese" in fast5_data[read_key]:
-#                    del fast5_data[read_key]["Analyese"]
-#                event_data = fast5_data[read_key].create_group("Analyese")
-#                event_data['Events'] = event_arr
-#                event_data.attrs.create("read_index", read_index, shape=None, dtype=None)
-#                event_data.attrs.create("contig", contig, shape=None, dtype=None)
-#                return
+def get_mod_sta(_kmer, _mu):
+
+    pdf_un = np.round(norm.pdf(_mu, loc=model_kmer_dict[_kmer]["model_mean_un"],
+                               scale=model_kmer_dict[_kmer]["model_stdv_un"]), 5)
+    pdf_mod = np.round(norm.pdf(_mu, loc=model_kmer_dict[_kmer]["model_mean_mod"],
+                                scale=model_kmer_dict[_kmer]["model_stdv_mod"]), 5)
+
+    if pdf_un >= pdf_mod:
+        return 0
+    else:
+        return 1
 
 
 def write_event_combine_file(read_index, contig, read_data, combine_file_name):
@@ -129,13 +99,15 @@ def write_event_combine_file(read_index, contig, read_data, combine_file_name):
     read_data = np.array(read_data)
     df = pd.DataFrame(read_data, columns=['pos', 'kmer', 'kmer_idx', 'mean', 'start_idx', 'end_idx', 'event_len'])
     df['pos'] = df['pos'].apply(int)
+    df['mean'] = df['mean'].apply(float)
     df['kmer_idx'] = df['kmer_idx'].apply(int)
     df['start_idx'] = df['start_idx'].apply(int)
     df['end_idx'] = df['end_idx'].apply(int)
     df['event_len'] = df['event_len'].apply(int)
     df['contig'] = contig
     df['read_idx'] = read_index
-    df = df[['read_idx', 'contig', 'pos', 'kmer', 'kmer_idx', 'mean', 'start_idx', 'end_idx', 'event_len']]
+    df['mod'] = df.apply(lambda x: get_mod_sta(x['kmer'], x['mean']), axis=1)
+    df = df[['read_idx', 'contig', 'pos', 'kmer', 'kmer_idx', 'mean', 'start_idx', 'end_idx', 'event_len', 'mod']]
     df.to_csv(combine_file_name, index=False, header=False, sep='\t', mode='a+')
 
 
@@ -374,6 +346,9 @@ if __name__ == '__main__':
     # read reference data
     kmer2idx_dict, idx2kmer_dict = generate_kmer_dict(os.path.join(args.root_dir, "0_reference", "model_idx_kmer.csv"))
 
+    # generate model kmer dict
+    model_kmer_dict = read_model_kmer(os.path.join(args.root_dir, "0_reference", "model_kmer_m6A_without_header.csv"))
+
     # input file name
     eventalign_file_name = os.path.join(args.root_dir, "5_align", args.sample,  args.eventalign + ".txt")
 
@@ -381,6 +356,8 @@ if __name__ == '__main__':
     eventalign_combine_file_name = os.path.join(args.root_dir, "5_align", args.sample,  args.eventalign + "_combined.txt")
     if os.path.exists(eventalign_combine_file_name):
         os.remove(eventalign_combine_file_name)
+    write_to_csv(eventalign_combine_file_name,
+                 ['read_idx', 'contig', 'pos', 'kmer', 'kmer_idx', 'mean', 'start_idx', 'end_idx', 'event_len', 'mod'])
 
     # eventalign_combine_file_name does not have header
 
