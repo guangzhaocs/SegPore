@@ -118,24 +118,6 @@ def combine_eventalign(input_file_name, combine_file_name, kmer2idx_dict):
     Original file name:  eventalign.txt
     Combined file name:  eventalign_combine.txt
 
-    Example:
-    Original file:
-    ================================================================================================================
-    contig	position	reference_kmer	read_index	strand	event_index	event_level_mean ...	start_idx	end_idx
-    ----------------------------------------------------------------------------------------------------------------
-    gi|545778205|gb|U00096.3|:c514859-514401	3	ATGGAG	0	t	16538	98.58	...	81407	81411
-    gi|545778205|gb|U00096.3|:c514859-514401	3	ATGGAG	0	t	16537	97.60	...	81403	81407
-    gi|545778205|gb|U00096.3|:c514859-514401	3	ATGGAG	0	t	16536	104.00	...	81398	81403
-    gi|545778205|gb|U00096.3|:c514859-514401	3	ATGGAG	0	t	16535	89.95	...	81392	81398
-    ================================================================================================================
-
-    After combining:
-    =======================================================================================
-    contig	read_index	position	trans_position	kmer	mean	start_idx	end_idx
-    ---------------------------------------------------------------------------------------
-    gi|545778205|gb|U00096.3|:c514859-514401	0	3	5	ATGGAG	97.53	81392	81411
-    =======================================================================================
-
     trans_position = position + shift(default: 2)
     You can ignore the trans_position if you do not need it.
     """
