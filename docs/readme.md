@@ -148,11 +148,13 @@ The output file `segpore_eventalign_2D.txt` is as follows:
 0	da848fa9-1322-4fea-b550-7efb32b014b6	ENST00000273480.3	AGGCA	17	100.959	5.2579	53216	53225	4	
 0	da848fa9-1322-4fea-b550-7efb32b014b6	ENST00000273480.3	AGGCA	17	111.676	3.778	53201	53210	7	
 ```
-After combining:
+After combining the results are as following. The last column `mod` represents the modification state (0 is for unmodified, 1 is for modified).
 ```
-read_idx	contig	pos	kmer	kmer_idx	mean	start_idx	end_idx	 event_len	mod
-0	ENST00000273480.3	16	TAGGC	810	88.749	53339	53423	50  0
-0	ENST00000273480.3	17	AGGCA	164	110.284	53135	53332	108  0
+read_idx	contig	pos	kmer	kmer_idx	mean	start_idx	end_idx	event_len	mod
+1	ENST00000273480.3	18	GGCAC	657	108.646	49115	49181	45	0
+1	ENST00000273480.3	19	GCACC	581	71.498	49084	49110	14	0
+1	ENST00000273480.3	20	CACCA	276	79.224	49055	49080	21	0
+1	ENST00000273480.3	21	ACCAC	81	76.863	49042	49051	9	0
 ```
 The density of all `GGACT` is as follows:
 <div align="center">
