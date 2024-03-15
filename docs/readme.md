@@ -148,7 +148,7 @@ The output file `segpore_eventalign_2D.txt` is as follows:
 0	da848fa9-1322-4fea-b550-7efb32b014b6	ENST00000273480.3	AGGCA	17	100.959	5.2579	53216	53225	4	
 0	da848fa9-1322-4fea-b550-7efb32b014b6	ENST00000273480.3	AGGCA	17	111.676	3.778	53201	53210	7	
 ```
-After combining the results are as following. The last column `mod` represents the modification state (0 is for unmodified, 1 is for modified).
+After combining the results are as following (demo/5_align/HEK293T_WT_rep1_FAK27249_demo_0/segpore_eventalign_2D_combined.txt). The last column `mod` represents the modification state (0 is for unmodified, 1 is for modified).
 ```
 read_idx	contig	pos	kmer	kmer_idx	mean	start_idx	end_idx	event_len	mod
 1	ENST00000273480.3	18	GGCAC	657	108.646	49115	49181	45	0
