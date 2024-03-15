@@ -150,8 +150,9 @@ The output file `segpore_eventalign_2D.txt` is as follows:
 ```
 After combining:
 ```
-0	ENST00000273480.3	16	TAGGC	810	88.749	53339	53423	50
-0	ENST00000273480.3	17	AGGCA	164	110.284	53135	53332	108
+read_idx	contig	pos	kmer	kmer_idx	mean	start_idx	end_idx	 event_len	mod
+0	ENST00000273480.3	16	TAGGC	810	88.749	53339	53423	50  0
+0	ENST00000273480.3	17	AGGCA	164	110.284	53135	53332	108  0
 ```
 The density of all `GGACT` is as follows:
 <div align="center">
