@@ -106,7 +106,7 @@ sh 2_hhmm_prepare.sh
 ```
 sh 2_hhmm_GPU.sh
 ```
-If the above script has no errors, you can run next Step 2.3 direactly. If the above script has errors or the `code/HierHmmCuda/hmm_one_read` can not run on your cluster, you can re-compile it as follows:
+If the above script has no errors, you can run next Step 2.3 direactly. If the above script has errors or the `code/HierHmmCuda/hmm_one_read` can not run on your cluster, you can re-compile it as follows, and then run `sh 2_hhmm_GPU.sh`.
 ```
 module load gcc
 module load cuda
@@ -129,7 +129,7 @@ Run alignment algorithm:
 ```
 sh 3_alignment.sh
 ```
-If the above script has no errors, you can run next step direactly. If the above script has errors or the `code/Resquiggle/resquiggle_2D` can not run on your cluster, you can re-compile it as follows:
+If the above script has no errors, you can run next step direactly. If the above script has errors or the `code/Resquiggle/resquiggle_2D` can not run on your cluster, you can re-compile it as follows, and then run `sh 3_alignment.sh`.
 ```
 module load gcc
 cd ../code/Resquiggle
