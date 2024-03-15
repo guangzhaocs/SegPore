@@ -1,10 +1,3 @@
-#!/bin/bash -l
-#SBATCH --gres=gpu:1
-#SBATCH --time=01:00:00
-#SBATCH --mem=10G
-module load gcc
-module load cuda
-
 cd ../code/HierHmmCuda
 for((idx=0;idx<=3999;idx++));  
 do 
