@@ -19,13 +19,14 @@ For Guppy installation, some references:
 - https://ontpipeline2.readthedocs.io/en/latest/GetStarted.html
 
 ## Environment test
-Make sure that your computer/cluster supports GPU computation and have installed `cuda`. The SegPore has passed the test under `gcc/9.3.0` and `cuda/11.0.2`.
+Make sure that your computer/cluster supports GPU computation and have installed `cuda`. The SegPore has passed the testing under `gcc/9.3.0` and `cuda/11.0.2`.
 
 ```
 nanopolish --version             #  nanopolish version 0.13.2  
 minimap2 --version               #  2.24-r1122
 guppy_basecaller --version       #  ... Version 6.0.1+652ffd1
 single_to_multi_fast5 --version  #  4.0.2
+samtools --version               #  samtools 1.9
 gcc --version                    #  gcc (Spack GCC) 9.3.0
 nvcc --version                   #  ... Cuda compilation tools, release 11.0, V11.0.194 ...
 ```
