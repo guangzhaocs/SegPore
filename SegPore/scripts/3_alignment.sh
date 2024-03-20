@@ -4,6 +4,7 @@ cd ..
 python code/2_0_generate_dataset_from_hmm_final.py
 
 cd code/Resquiggle
+chmod 777 resquiggle_2D 
 ./resquiggle_2D ../../demo/5_align/HEK293T_WT_rep1_FAK27249_demo_0 segpore_eventalign_2D.txt ../../demo/0_reference/model_kmer_m6A_without_header.csv
 
 cd ../..
