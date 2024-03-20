@@ -146,7 +146,7 @@ Run alignment algorithm:
 ```
 sh 3_alignment.sh
 ```
-**Output**: If the script runs successfully, the folder `demo/5_align/HEK293T_WT_rep1_FAK27249_demo_0` will contain `segpore_eventalign_2D.txt` and `segpore_eventalign_2D_combined.txt`. files.
+**Output**: If the script runs successfully, the folder `demo/5_align/HEK293T_WT_rep1_FAK27249_demo_0` will contain `segpore_eventalign_2D.txt`, `segpore_eventalign_2D_combined.txt` and some other files.
 
 If the above script has no errors, you can run next step direactly. If the above script has errors or the `code/Resquiggle/resquiggle_2D` can not run on your cluster, you can re-compile it as follows, and then run `sh 3_alignment.sh`.
 ```
