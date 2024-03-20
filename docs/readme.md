@@ -117,6 +117,8 @@ sh 2_hhmm_prepare.sh
 ```
 sh 2_hhmm_GPU.sh
 ```
+**Output**: if the script runs successfully, the folder `demo/4_hhmm/hhmm_output/HEK293T_WT_rep1_FAK27249_demo_0` will have two files: `res_border.csv` and `res_state.csv`.
+
 If the above script has no errors, you can run next Step 2.3 direactly. If the above script has errors or the `code/HierHmmCuda/hmm_one_read` can not run on your cluster, you can re-compile it as follows, and then run `sh 2_hhmm_GPU.sh`.
 ```
 cd ../code/HierHmmCuda
