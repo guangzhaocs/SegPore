@@ -60,6 +60,9 @@ SegPore
                          | -- hhmm_final
                  | -- 5_align
 ```
+## Example demo output
+Maybe the SegPore Workflow is complex, and we also provide the example demo output ([example_demo_output.tar.gz](https://drive.google.com/file/d/1y0IhL0zABeB0Wl1pmH92OYxeJZfgkeI8/view?usp=drive_link)). Following the SegPore Workflow, if you can get the same outputs as the `example_demo_output.tar.gz`, the SegPore runs successfully.
+
 ## SegPore Workflow
 
 ### Step 1: Basecalling, mapping and preprocessing
