@@ -136,6 +136,7 @@ The output illustration of HHMM:
 ```
 sh 2_hhmm_post_proc.sh
 ```
+**Output**: If the script runs successfully, the folder `demo/4_hhmm/hhmm_final/HEK293T_WT_rep1_FAK27249_demo_0` will have the `mu`, `sigma` and `len` resluts files for `curr`, `prev` and `next`.
 
 ### Step 3: Alignment of signal segments with reference sequence
 Run alignment algorithm:
