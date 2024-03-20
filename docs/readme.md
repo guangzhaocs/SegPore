@@ -19,6 +19,14 @@ For Guppy installation, some references:
 - https://help.nanoporetech.com/en/articles/6628042-how-do-i-install-stand-alone-guppy
 - https://ontpipeline2.readthedocs.io/en/latest/GetStarted.html
 
+## Environment test
+
+```
+nanopolish --version           #  nanopolish version 0.13.2  
+minimap2 --version             #  2.24-r1122
+guppy_basecaller --version     #  Guppy Basecalling Software, (C) Oxford Nanopore Technologies, Limited. Version 6.0.1+652ffd1
+```
+
 ## Download Demo Data
 
 We use the demo data from [xPore](https://xpore.readthedocs.io/en/latest/index.html). Our SegPore is the single-mode method, so we only use the WT data in the demo data.
