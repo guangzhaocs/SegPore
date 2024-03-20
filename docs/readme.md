@@ -3,7 +3,7 @@
 git clone https://github.com/guangzhaocs/SegPore.git
 cd SegPore
 ```
-## Environment setup
+## Environment Setup
 
 ```
 conda env create -f environment.yml
@@ -18,7 +18,7 @@ For Guppy installation, some references:
 - https://help.nanoporetech.com/en/articles/6628042-how-do-i-install-stand-alone-guppy
 - https://ontpipeline2.readthedocs.io/en/latest/GetStarted.html
 
-## Environment test
+## Environment Test
 Make sure that your computer/cluster supports GPU computation and have installed `cuda`. The SegPore has passed the testing under `gcc/9.3.0` and `cuda/11.0.2`.
 
 ```
@@ -61,7 +61,7 @@ SegPore
                          | -- hhmm_final
                  | -- 5_align
 ```
-## Example demo output
+## Demo Example Output
 Maybe the SegPore workflow is complex, and we also provide the example demo output ([example_demo_output.tar.gz](https://drive.google.com/file/d/1y0IhL0zABeB0Wl1pmH92OYxeJZfgkeI8/view?usp=drive_link)). Following the SegPore workflow, if you can get the same outputs as the `example_demo_output.tar.gz`, the SegPore runs successfully.
 
 ## SegPore Workflow
