@@ -113,6 +113,8 @@ So when standardizing the fast5 file, one read_name only choose one read_idx. Th
 ```
 sh 2_hhmm_prepare.sh
 ```
+**Output**: If the script runs successfully, the folder `demo/4_hhmm/hhmm_init` will have four files: `HEK293T_WT_rep1_FAK27249_demo_0-border.csv`, `HEK293T_WT_rep1_FAK27249_demo_0-peaks.csv`, `HEK293T_WT_rep1_FAK27249_demo_0-readname.csv` and `HEK293T_WT_rep1_FAK27249_demo_0-signal.csv`, and the folder `demo/4_hhmm/hhmm_input/HEK293T_WT_rep1_FAK27249_demo_0` will have two files: `init_border.csv` and `signal.csv`.
+
 #### Step 2.2: Next, run HHMM on CUDA:
 ```
 sh 2_hhmm_GPU.sh
