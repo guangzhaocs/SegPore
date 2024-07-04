@@ -14,10 +14,11 @@ import argparse
 import pandas as pd
 
 
-def wc_count(file_name):
-    import subprocess
-    out = subprocess.getoutput("wc -l %s" % file_name)
-    return int(out.split()[0])
+def wc_count(filename):
+    with open(filename) as f:
+        for i, _ in enumerate(f):
+            pass
+    return i + 1
 
 
 def write_to_file(file_name, row):
