@@ -69,7 +69,8 @@ https://doi.org/10.7554/eLife.104618.1
 ```
 @article{Cheng_2025,
   title={Raw signal segmentation for estimating RNA modification from Nanopore direct RNA sequencing data},
-  url={http://dx.doi.org/10.7554/eLife.104618.1}, DOI={10.7554/elife.104618.1},
+  url={http://dx.doi.org/10.7554/eLife.104618.1},
+  DOI={10.7554/elife.104618.1},
   publisher={eLife Sciences Publications, Ltd},
   author={Cheng, Guangzhao and Vehtari, Aki and Cheng, Lu},
   year={2025},
