@@ -63,10 +63,9 @@ Use the results of GMM to update the 5mer parameter table and iteratively run St
 
 ## Cite SegPore
 
-```
 Guangzhao Cheng, Aki Vehtari, Lu Cheng (2025) *Raw signal segmentation for estimating RNA modification from Nanopore direct RNA sequencing data*, eLife, 14:RP104618
+
 https://doi.org/10.7554/eLife.104618.1
-```
 
 ```
 ```
