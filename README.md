@@ -67,15 +67,15 @@ Guangzhao Cheng, Aki Vehtari, Lu Cheng (2025) **Raw signal segmentation for esti
 https://doi.org/10.7554/eLife.104618.1
 
 ```
-@article{Cheng_2025,
+@article{cheng2025raw,
   title={Raw signal segmentation for estimating RNA modification from Nanopore direct RNA sequencing data},
   author={Cheng, Guangzhao and Vehtari, Aki and Cheng, Lu},
   journal={eLife},
-  url={http://dx.doi.org/10.7554/eLife.104618.1},
   DOI={10.7554/elife.104618.1},
   publisher={eLife Sciences Publications, Ltd},
+  volume={14},
+  pages={RP104618},
   year={2025},
-  month=mar
 }
 ```
 
