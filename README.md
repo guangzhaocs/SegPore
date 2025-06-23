@@ -1,5 +1,10 @@
 ## SegPore: Raw Signal Segmentation for Estimating RNA Modification from Nanopore Direct RNA Sequencing Data
 
+[![Release](https://img.shields.io/github/v/release/guangzhaocs/SegPore?include_prereleases)](https://github.com/guangzhaocs/SegPore/releases)
+[![Downloads](https://img.shields.io/github/downloads/guangzhaocs/SegPore/total?logo=github)](https://github.com/guangzhaocs/SegPore/archive/refs/tags/v1.0.zip)
+
+https://github.com/guangzhaocs/SegPore/releases
+
 <div align="center">
 <img src=docs/media/SegPore_anim.gif width=80% />
 <img src=docs/media/github_pic.png width=95% />
