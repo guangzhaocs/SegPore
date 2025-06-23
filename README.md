@@ -2,6 +2,7 @@
 
 [![Release](https://img.shields.io/github/v/release/guangzhaocs/SegPore?include_prereleases)](https://github.com/guangzhaocs/SegPore/releases)
 [![Downloads](https://img.shields.io/github/downloads/guangzhaocs/SegPore/total?logo=github)](https://github.com/guangzhaocs/SegPore/archive/refs/tags/v1.0.zip)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/guangzhaocs/SegPore.svg?style=social)](https://github.com/guangzhaocs/SegPore/stargazers)
 
 
