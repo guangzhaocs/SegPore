@@ -5,8 +5,6 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/guangzhaocs/SegPore.svg?style=social)](https://github.com/guangzhaocs/SegPore/stargazers)
 
-<!-->[![Downloads](https://img.shields.io/github/downloads/guangzhaocs/SegPore/total?logo=github)](https://github.com/guangzhaocs/SegPore/archive/refs/tags/v1.0.zip)<-->
-
 <div align="center">
 <img src=docs/media/SegPore_anim.gif width=80% />
 <img src=docs/media/github_pic.png width=95% />
