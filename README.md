@@ -1,6 +1,6 @@
 ## SegPore: Raw Signal Segmentation for Estimating RNA Modification from Nanopore Direct RNA Sequencing Data
 
-[![Read the manuscript](https://img.shields.io/badge/eLife-Manuscript-green)](https://elifesciences.org/reviewed-preprints/104618)
+[![Read the manuscript](https://img.shields.io/badge/eLife-Manuscript-green)](https://elifesciences.org/articles/104618)
 [![Release](https://img.shields.io/github/v/release/guangzhaocs/SegPore?include_prereleases)](https://github.com/guangzhaocs/SegPore/releases)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/guangzhaocs/SegPore.svg?style=social)](https://github.com/guangzhaocs/SegPore/stargazers)
@@ -68,20 +68,28 @@ Use the results of GMM to update the 5mer parameter table and iteratively run St
 
 ## Cite SegPore
 
-Guangzhao Cheng, Aki Vehtari, Lu Cheng (2025) **Raw signal segmentation for estimating RNA modification from Nanopore direct RNA sequencing data**, *eLife*, **14**:RP104618
-https://elifesciences.org/reviewed-preprints/104618
-
+Guangzhao Cheng, Aki Vehtari, Lu Cheng (2026) **Raw signal segmentation for estimating RNA modification from Nanopore direct RNA sequencing data** *eLife* **14**:RP104618
+    
 ```
-@article{cheng2025raw,
-  title={Raw signal segmentation for estimating RNA modification from Nanopore direct RNA sequencing data},
-  author={Cheng, Guangzhao and Vehtari, Aki and Cheng, Lu},
-  journal={eLife},
-  DOI={10.7554/elife.104618},
-  publisher={eLife Sciences Publications, Ltd},
-  volume={14},
-  pages={RP104618},
-  year={2025},
+@article {10.7554/eLife.104618,
+article_type = {journal},
+title = {Raw signal segmentation for estimating RNA modification from Nanopore direct RNA sequencing data},
+author = {Cheng, Guangzhao and Vehtari, Aki and Cheng, Lu},
+editor = {Altemose, Nicolas and Moses, Alan M},
+volume = 14,
+year = 2026,
+month = {mar},
+pub_date = {2026-03-02},
+pages = {RP104618},
+citation = {eLife 2026;14:RP104618},
+doi = {10.7554/eLife.104618},
+url = {https://doi.org/10.7554/eLife.104618},
+keywords = {Nanopore, RNA modification, raw signal, alignment, segmentation},
+journal = {eLife},
+issn = {2050-084X},
+publisher = {eLife Sciences Publications, Ltd},
 }
+
 ```
 
 ## Reference
